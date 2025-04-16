@@ -1,0 +1,38 @@
+{
+	"name": "ecom-api-mug-store",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest",
+		"cf-typegen": "wrangler types",
+		"db:generate": "drizzle-kit generate",
+		"db:migrate": "drizzle-kit migrate",
+		"db:studio": "drizzle-kit studio",
+		"db:seed": "tsx db/seed.ts"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.7.5",
+		"@cloudflare/workers-types": "^4.20250404.0",
+		"@types/node": "^22.14.0",
+		"cross-env": "^7.0.3",
+		"dotenv": "^16.4.7",
+		"drizzle-kit": "^0.30.6",
+		"drizzle-zod": "^0.7.1",
+		"tsx": "^4.19.3",
+		"typescript": "^5.5.2",
+		"vitest": "~3.0.7",
+		"wrangler": "^4.7.0"
+	},
+	"dependencies": {
+		"@libsql/client": "^0.15.2",
+		"drizzle-orm": "^0.41.0",
+		"hono": "^4.7.5",
+		"itty-router": "^5.0.18",
+		"lorem-ipsum": "^2.0.8",
+		"uuid": "^11.1.0"
+	},
+	"packageManager": "pnpm@9.15.2+sha512.93e57b0126f0df74ce6bff29680394c0ba54ec47246b9cf321f0121d8d9bb03f750a705f24edc3c1180853afd7c2c3b94196d0a3d53d3e069d9e2793ef11f321"
+}

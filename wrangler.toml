@@ -1,0 +1,8 @@
+name = "mug-store-api"
+main = "src/index.ts"
+compatibility_date = "2024-04-01"
+module = true
+
+[vars]
+TURSO_DB_URL = ""
+TURSO_DB_AUTH_TOKEN = ""
